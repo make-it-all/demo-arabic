@@ -7,7 +7,8 @@
   </section>
   <section>
     <h4>Problems</h4>
-    <a href="#">New +</a>
+    <a href="/problems">All</a>
+    <a href="/problems/new">New +</a>
     <a href="#">Completed</a>
     <a href="#">Outstanding</a>
   </section>
