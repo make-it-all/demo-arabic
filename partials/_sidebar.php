@@ -1,6 +1,11 @@
 <div id="sidebar">
   <a href="/">Dashboard</a>
   <section>
+    <h4>Calls</h4>
+    <a href="/calls">All</a>
+    <a href="/calls/new">New</a>
+  </section>
+  <section>
     <h4>Problems</h4>
     <a href="/problems">All</a>
     <a href="/problems/new">New</a>
