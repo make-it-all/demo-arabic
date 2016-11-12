@@ -38,60 +38,9 @@
         </div>
         <div id="page_content">
 
-
-
-
-          <div class="panel" id="new_calls_graph">
-
-          </div>
-
-
- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript">
-          google.charts.load('current', {'packages':['line']});
-          // google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-
-var data = new google.visualization.DataTable();
-data.addColumn('string', 'Day');
-data.addColumn('number', 'Completed Problems');
-data.addColumn('number', 'Outstanding Problems');
-data.addColumn('number', 'Total Problems');
-
-data.addRows([
-['1st',  37.8, 10, 10],
-['2nd',  30.9, 69.5, 15],
-['3rd',  25.4,   57, 22],
-['4th',  11.7, 18.8, 26],
-['5th',  11.9, 17.6, 31],
-['6th',   8.8, 13.6, 36],
-['7th',   7.6, 12.3, 40],
-['8th',  12.3, 29.2, 47],
-['9th',  16.9, 42.9, 53],
-['10th', 12.8, 30.9, 60],
-['11th',  5.3,  7.9, 68],
-['12th',  6.6,  8.4, 76],
-['13th',  4.8,  6.3, 80],
-['14th',  4.2,  6.2, 81]
-]);
-
-var options = {
-chart: {
-  title: 'Problems through the month of Janurary',
-  subtitle: 'Recorded at the end of each working day'
-},
-width: 900,
-height: 500
-};
-
-    var chart = new google.charts.Line(document.getElementById('new_calls_graph'));
-
-chart.draw(data, options);
-}
-          </script>
-
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_new_calls_graph.php'; ?>
+          <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_distribution_of_problem_types_graph.php'; ?>
 
         </div>
       </div>

@@ -19,7 +19,6 @@
     <a href="/users#specialists">Specialists</a>
     <a href="/users#admins">Admins</a>
   </section>
-  asd
   <div id="language_selector">
     <input type="checkbox" class="dropdown_controller" id="language_dropdown"/>
     <div class="dropdown_content">
