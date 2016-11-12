@@ -6,32 +6,34 @@
   <table class="index_table">
     <thead>
       <tr>
-        <th class="narrow_column">Type</th>
-        <th data-searchable>Description</th>
-        <th data-searchable>Keywords</th>
+        <th class="narrow_column"></th>
+        <th data-searchable>Caller</th>
+        <th data-searchable>Operator</th>
         <th class="orderable orderable-asc"><a href="#">Created At</a></th>
-        <th class="narrow_column">Completed</th>
+        <th>Notes</th>
         <th class="narrow_column">Edit</th>
       </tr>
     </thead>
     <tbody>
       <?php $created_at = 0; ?>
-      <?php for($i=0; $i<20; $i++): ?>
+      <?php for($i=0; $i<10; $i++): ?>
         <tr>
 
           <td>
-            <?php if (rand(0, 1) == 0): ?>
-              <i class="fa fa-file-code-o" aria-hidden="true"></i>
-            <?php else: ?>
-              <i class="fa fa-desktop" aria-hidden="true"></i>
-            <?php endif; ?>
+
           </td>
 
+
+
+
+
+
+
           <?php
-            $words = ['bacon', 'ipsum', 'dolor', 'amet', 'capicola', 'in', 'quis', 'flank', 'laborum', 'nostrud', 'commodo', 'cil'];
-            shuffle($words);
+            $names = "Michael", "James", "John", "Robert", "David", "William", "Mary", "Christopher", "Joseph", "Richard", "Daniel", "Thomas", "Matthew", "Jennifer", "Charles", "Anthony", "Patricia", "Linda", "Mark", "Elizabeth", "Joshua", "Steven", "Andrew", "Kevin", "Brian", "Barbara", "Jessica", "Jason", "Susan", "Timothy", "Paul", "Kenneth", "Lisa", "Ryan", "Sarah", "Karen", "Jeffrey", "Donald", "Ashley", "Eric"];
+            shuffle($names);
           ?>
-          <td><a href="#"><?php echo implode(' ', array_slice($words, 0, rand(5,12))); ?>...</a></td>
+          <td><a href="#"><?php echo $names[0] ?>...</a></td>
 
           <?php
             $keywords = ['Microsoft', 'Adobe', 'Apple', 'Blackberry', 'Samsung', 'Linux', 'Word', 'Excel', 'Flash', 'Photoshop', 'Outlook', 'Powerpoint', 'Illistator', 'Stuck', 'Not Starting', 'Black', 'Jammed', 'Off', 'On', 'White', 'Missing', 'Multiple', 'Slow', 'Popup', 'Closing', 'Saving', 'Printing', 'Publishing', 'Opening', 'Deleting', 'Deleted', 'Crashed', 'Fire', 'Locked', 'Password', 'Email', 'Username', 'Forgotten', 'Reset', 'Restart', 'Stop', 'Start'];
@@ -66,4 +68,3 @@
   </table>
 </div>
 <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/_foot.php'; ?>
-      
