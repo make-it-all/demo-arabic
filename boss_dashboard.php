@@ -86,7 +86,7 @@ width: 900,
 height: 500
 };
 
-var chart = new google.charts.Line(document.getElementById('new_calls_graph'));
+    var chart = new google.charts.Line(document.getElementById('new_calls_graph'));
 
 chart.draw(data, options);
 }

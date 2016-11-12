@@ -36,6 +36,7 @@
       <input type="radio" class="tab_controller" name="tab" id="tab_5">
       <div class="tab_heads_container">
         <label for="tab_1">Outstanding Jobs</label>
+        <label for="tab_1">Outstanding Jobs</label>
         <label for="tab_2">Completed Jobs</label>
         <label for="tab_3">Specialisations</label>
         <label for="tab_4">History</label>

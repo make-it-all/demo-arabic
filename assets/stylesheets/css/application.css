@@ -3344,42 +3344,6 @@ select {
       color: rgba(255, 255, 255, 0.8);
       line-height: 50px; }
 
-div.dropdown_container#language_selector label {
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  height: 100%;
-  line-height: 50px;
-  padding: 0 15px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  width: 120px;
-  text-align: center;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-div.dropdown_container#language_selector input[type=checkbox] {
-  display: none; }
-  div.dropdown_container#language_selector input[type=checkbox]:checked + .dropdown_contents {
-    display: block; }
-div.dropdown_container#language_selector .dropdown_contents {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  text-align: center;
-  width: 120px; }
-  div.dropdown_container#language_selector .dropdown_contents a {
-    display: block;
-    padding: 10px 20px;
-    background: #e6e6e6; }
-    div.dropdown_container#language_selector .dropdown_contents a + a {
-      border-top: 1px solid rgba(0, 0, 0, 0.5); }
-    div.dropdown_container#language_selector .dropdown_contents a:hover {
-      background: #b7b7b7;
-      transition: 0.3s; }
-
 #sidebar {
   width: 230px;
   -webkit-flex-shrink: 0;
@@ -3410,6 +3374,54 @@ div.dropdown_container#language_selector .dropdown_contents {
     #sidebar section a {
       padding-right: 0;
       line-height: 30px; }
+
+div#language_selector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left; }
+  div#language_selector input[type=checkbox].dropdown_controller {
+    display: none; }
+    div#language_selector input[type=checkbox].dropdown_controller:not(:checked) ~ .dropdown_content {
+      max-height: 0; }
+    div#language_selector input[type=checkbox].dropdown_controller:not(:checked) ~ label {
+      max-width: 60px;
+      font-size: 0; }
+    div#language_selector input[type=checkbox].dropdown_controller:not(:checked) ~ .dropdown_content a {
+      max-width: 60px;
+      font-size: 0; }
+  div#language_selector label, div#language_selector a {
+    background: #414641;
+    border-radius: 0 10px 0 0;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+    overflow: hidden;
+    max-width: 110px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.3s max-width 0.1s, 0s font-size 0.1s;
+    white-space: nowrap; }
+  div#language_selector a {
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 5px; }
+  div#language_selector .dropdown_content {
+    overflow: hidden;
+    max-height: 150px;
+    transition: 0.3s; }
+  div#language_selector img {
+    vertical-align: middle;
+    padding-right: 5px; }
 
 #flash_messages {
   text-align: center; }

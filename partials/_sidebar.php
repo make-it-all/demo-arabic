@@ -14,10 +14,14 @@
     <a href="/users#specialists">Specialists</a>
     <a href="/users#admins">Admins</a>
   </section>
+  asd
   <div id="language_selector">
-    <a href="https://make-it-all-demo.herokuapp.com"><img src="/assets/images/eng-flag.png"/></a>
-    <a href="https://make-it-all-demo-arabic.herokuapp.com"><img src="/assets/images/arabic-flag.png"/></a>
-    <a href="https://make-it-all-demo-german.herokuapp.com"><img src="/assets/images/german-flag.png"/></a>
-    <a href="https://make-it-all-demo-chinese.herokuapp.com"><img src="/assets/images/chinese-flag.png"/></a>
+    <input type="checkbox" class="dropdown_controller" id="language_dropdown"/>
+    <div class="dropdown_content">
+      <div class="dropdown_content"><a href="https://make-it-all-demo-arabic.herokuapp.com"><img src="/assets/images/arabic-flag.png"/>Arabic</a></div>
+      <div class="dropdown_content"><a href="https://make-it-all-demo-german.herokuapp.com"><img src="/assets/images/german-flag.png"/>German</a></div>
+      <div class="dropdown_content"><a href="https://make-it-all-demo-chinese.herokuapp.com"><img src="/assets/images/chinese-flag.png"/>Chinese</a></div>
+    </div>
+    <label for="language_dropdown"><img src="/assets/images/eng-flag.png"/> English</label>
   </div>
 </div>

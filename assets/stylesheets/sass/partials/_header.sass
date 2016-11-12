@@ -18,36 +18,3 @@
     a
       color: $light_text_color
       line-height: 50px
-
-div.dropdown_container#language_selector
-  label
-    color: $text_color
-    display: block
-    height: 100%
-    line-height: 50px
-    padding: 0 15px
-    border-left: 1px solid rgba(white, 0.3)
-    width: 120px
-    text-align: center
-    +user-select(none)
-  input[type=checkbox]
-    display: none
-
-    &:checked + .dropdown_contents
-      display: block
-  .dropdown_contents
-    display: none
-    position: absolute
-    z-index: 1000
-    right: 0
-    text-align: center
-    width: 120px
-    a
-      display: block
-      padding: 10px 20px
-      background: #e6e6e6
-      + a
-        border-top: 1px solid rgba(black, 0.5)
-      &:hover
-        background: #b7b7b7
-        transition: 0.3s
