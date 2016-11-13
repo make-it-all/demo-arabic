@@ -48,6 +48,19 @@
           </div>
         </div>
         <div id="page_content">
+          <div>
+            <input type="button" name="firstPage" value="First">
+            <input type="button" name="previousPage" value="Pevious">
+            <input type="button" name="pageOne" value="1">
+            <input type="button" name="pageTwo" value="2">
+            <input type="button" name="pageThree" value="3">
+            <input type="button" name="pageFour" value="4">
+            <input type="button" name="pageFive" value="5">
+            <input type="button" name="nextPage" value="Next">
+            <input type="button" name="LastPage" value="Last">
+            Go to page:
+            <input type="select" name="pageSelect" value="1">
+          </div>
           <table class="index_table">
             <thead>
               <tr>
