@@ -1,30 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>User Index</title>
-    <link rel="stylesheet" href="/assets/stylesheets/css/application.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/assets/javascripts/application.js"></script>
-    <script src="/assets/javascripts/chosen.js"></script>
-  </head>
-  <body>
-  <?php require 'partials/_header.php'; ?>
-   <div id="page_wrapper">
-    <?php require 'partials/_sidebar.php'; ?>
+<?php
+  $title = "Dashboard";
+  require $_SERVER['DOCUMENT_ROOT'].'/partials/_head.php';
+?>
+        <div id="page_content">
 
-    <div id="page">
-      <?php if (isset($_GET['flash'])): ?>
-        <div id="flash_messages">
-          <div class="flash_message">
-            <?php echo $_GET['flash']; ?>
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </div>
-        </div>
-      <?php endif; ?>
-      <div id="page_inner">
-        <div id="page_head">
-          <div id="page_info">
+          <div class="panel">
             <h1>Welcome, Michael Boss</h1>
             <p>
               Stuff has gone on:
@@ -35,8 +15,6 @@
               <li>7 Calls have been made about problems you created.</li>
             </ul>
           </div>
-        </div>
-        <div id="page_content">
 
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">

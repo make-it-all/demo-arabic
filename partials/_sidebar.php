@@ -13,6 +13,13 @@
     <a href="#">Outstanding</a>
   </section>
   <section>
+    <h4>Personnel</h4>
+    <a href="/personnels">All</a>
+    <a href="/personnels#operators">Operators</a>
+    <a href="/personnels#specialists">Specialists</a>
+    <a href="/personnels#admins">Admins</a>
+  </section>
+  <section>
     <h4>Users</h4>
     <a href="/users">All</a>
     <a href="/users#operators">Operators</a>

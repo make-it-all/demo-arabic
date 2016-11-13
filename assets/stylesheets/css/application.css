@@ -3155,6 +3155,33 @@ span.highlight {
   justify-content: space-between;
   margin-top: 20px; }
 
+.personnel_card_container {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px; }
+
+.personnel_card {
+  background: white;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  margin: 10px 0;
+  clear: both; }
+  .personnel_card_container .personnel_card {
+    box-shadow: none; }
+    .personnel_card_container .personnel_card + .personnel_card {
+      border-top: 1px solid #ccc; }
+  .personnel_card h3 {
+    margin: 5px 0; }
+  .personnel_card a {
+    float: right;
+    color: #f2b800;
+    text-decoration: underline;
+    margin-top: 10px; }
+
+.right_link {
+  float: right;
+  color: #f2b800;
+  text-decoration: underline; }
+
 .tabs_container input[type='radio'].tab_controller {
   display: none; }
   .tabs_container input[type='radio'].tab_controller:nth-child(1):checked ~ .tab_heads_container label:nth-child(1) {
@@ -3227,6 +3254,35 @@ span.highlight {
 .tab_panel {
   background: white;
   padding: 24px; }
+
+.columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main_column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.sub_column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.panel {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+  margin: 30px; }
 
 .field {
   margin-bottom: 20px; }

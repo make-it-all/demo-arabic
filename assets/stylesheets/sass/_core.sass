@@ -136,3 +136,30 @@ span.highlight
   +flexbox
   +justify-content(space-between)
   margin-top: 20px
+
+
+.personnel_card_container
+  box-shadow: $box-1
+  padding: 5px
+.personnel_card
+  background: white
+  box-shadow: $box-1
+  padding: 5px 10px
+  margin: 10px 0
+  clear: both
+  .personnel_card_container &
+    box-shadow: none
+    + .personnel_card
+      border-top: 1px solid #ccc
+  h3
+    margin: 5px 0
+  a
+    float: right
+    color: #f2b800
+    text-decoration: underline
+    margin-top: 10px
+
+.right_link
+  float: right
+  color: #f2b800
+  text-decoration: underline
