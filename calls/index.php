@@ -9,7 +9,7 @@
         <th class="narrow_column"></th>
         <th data-searchable>Caller</th>
         <th data-searchable>Operator</th>
-        <th class="orderable orderable-asc"><a href="#">Created At</a></th>
+        <th class="orderable orderable-asc"><a href="#">Received At</a></th>
         <th>Notes</th>
         <th class="narrow_column">Edit</th>
       </tr>
@@ -30,7 +30,7 @@
 
 
           <?php
-            $names = "Michael", "James", "John", "Robert", "David", "William", "Mary", "Christopher", "Joseph", "Richard", "Daniel", "Thomas", "Matthew", "Jennifer", "Charles", "Anthony", "Patricia", "Linda", "Mark", "Elizabeth", "Joshua", "Steven", "Andrew", "Kevin", "Brian", "Barbara", "Jessica", "Jason", "Susan", "Timothy", "Paul", "Kenneth", "Lisa", "Ryan", "Sarah", "Karen", "Jeffrey", "Donald", "Ashley", "Eric"];
+            $names = ["Michael", "James", "John", "Robert", "David", "William", "Mary", "Christopher", "Joseph", "Richard", "Daniel", "Thomas", "Matthew", "Jennifer", "Charles", "Anthony", "Patricia", "Linda", "Mark", "Elizabeth", "Joshua", "Steven", "Andrew", "Kevin", "Brian", "Barbara", "Jessica", "Jason", "Susan", "Timothy", "Paul", "Kenneth", "Lisa", "Ryan", "Sarah", "Karen", "Jeffrey", "Donald", "Ashley", "Eric"];
             shuffle($names);
           ?>
           <td><a href="#"><?php echo $names[0] ?>...</a></td>

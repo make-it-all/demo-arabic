@@ -5,23 +5,16 @@ window.graphs.push(function() {
 
 var data = new google.visualization.arrayToDataTable([
 ['Problem Type', 'Number of Occurrences'],
-['Apple', 94],
-['Linux', 26],
-['Printer', 16],
-['Deleted', 35],
-['Jammed', 26],
-['Fire', 3],
-['Closing', 15],
-['Crashed', 48],
-['Opening', 31],
-['Missing', 19],
-['Stuck', 45],
-['Slow', 69],
+['Linux Crashed', 36],
+['File Deleted', 35],
+['Printer Jammed', 26],
+['No Internet', 31],
+['Computer Slow', 26],
 ]);
 
 
 var options = {
-title: 'No. of Problem Type Occurrences',
+title: 'No. of Problem Occurrences',
 subtitle: 'Recorded over the month of Feburary',
 legend: {
   position: 'left',
@@ -29,9 +22,7 @@ legend: {
 },
 pieSliceText: 'label',
 slices: {
-  0: {offset: 0.2},
-  3:{offset: 0.2},
-  7:{offset: 0.2},
+  1:{offset: 0.1},
 },
 width: 900,
 height: 500
