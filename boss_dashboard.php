@@ -25,7 +25,7 @@
       <div id="page_inner">
         <div id="page_head">
           <div id="page_info">
-            <h1>Welcome, Micheal Boss</h1>
+            <h1>Welcome, Michael Boss</h1>
             <p>
               Stuff has gone on:
             </p>
@@ -39,8 +39,20 @@
         <div id="page_content">
 
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart', 'line']});
+
+            window.graphs = [];
+            google.charts.setOnLoadCallback(function(){
+              for(i=0;i<window.graphs.length;i++) {
+                window.graphs[i].call();
+              }
+            });
+          </script>
           <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_new_calls_graph.php'; ?>
           <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_distribution_of_problem_types_graph.php'; ?>
+          <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_availability_of_specialists_graph.php'; ?>
+
 
         </div>
       </div>

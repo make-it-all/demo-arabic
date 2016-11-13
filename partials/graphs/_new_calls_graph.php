@@ -1,11 +1,7 @@
 <div class="panel" id="new_calls_graph"></div>
 
 <script type="text/javascript">
-google.charts.load('current', {'packages':['line']});
-// google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
+window.graphs.push(function() {
 
 var data = new google.visualization.DataTable();
 data.addColumn('string', 'Day');
@@ -59,5 +55,5 @@ height: 500
 var chart = new google.charts.Line(document.getElementById('new_calls_graph'));
 
 chart.draw(data, options);
-}
+});
 </script>
