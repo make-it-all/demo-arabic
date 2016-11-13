@@ -57,8 +57,9 @@
                 <th data-searchable>Description</th>
                 <th data-searchable>Keywords</th>
                 <th class="orderable orderable-asc"><a href="#">Created At</a></th>
-                <th class="narrow_column">Completed</th>
+                <th class="narrow_column">Done</th>
                 <th class="narrow_column">Edit</th>
+                <th class="narrow_column">Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -110,6 +111,7 @@
                     <?php endif; ?>
                   </td>
                   <td><a href="/problems/<?php echo $i + 1; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                  <td><a href="/problems/<?php echo $i + 1; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                 </tr>
               <?php endfor; ?>
             </tbody>

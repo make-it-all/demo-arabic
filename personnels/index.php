@@ -10,10 +10,10 @@
   <table class="index_table">
     <thead>
       <tr>
-        <th data-searchable>Personnel Id</th>
-        <th data-searchable>Name</th>
-        <th data-searchable>Email</th>
-        <th data-searchable>Phone</th>
+        <th data-searchable class="orderable orderable-asc"><a href="#">Personnel Id</a></th>
+        <th data-searchable class="orderable"><a href="#">Name</a></th>
+        <th data-searchable class="orderable"><a href="#">Email</a></th>
+        <th data-searchable class="orderable"><a href="#">Phone</a></th>
         <th data-searchable>Department</th>
         <th class="narrow_column">Edit</th>
       </tr>
