@@ -16,6 +16,9 @@
       <?php include $_SERVER["DOCUMENT_ROOT"].'/partials/_flash.php'; ?>
       <div id="page_inner">
         <div id="page_head">
+<?php
+  $title;
+ ?>
           <div id="page_info">
             <h1>New Problem</h1>
             <div id="page_actions">

@@ -30,13 +30,13 @@
             <div id="filter_container">
               <div class="filter_group">
                 <h4>Type</h4>
-                <a href="#">Hardware</a>
+                <a href="#" class="active_filter">Hardware</a>
                 <a href="#">Software</a>
               </div>
               <div class="filter_group">
                 <h4>Completed</h4>
-                <a href="#"><i class="fa fa-cross"></i></a>
-                <a href="#">Software</a>
+                <a href="#"><i class="fa fa-times"></i></a>
+                <a href="#"><i class="fa fa-check"></i></a>
               </div>
             </div>
             <div id="search_form">
@@ -65,9 +65,12 @@
                 <tr>
 
                   <td>
-                    <?php if (rand(0, 1) == 0): ?>
+                    <?php $x = rand(0,100); if ($x < 35): ?>
                       <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <?php else: ?>
+                    <?php elseif ($x < 70): ?>
+                      <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <?php elseif ($x < 75): ?>
+                      <i class="fa fa-file-code-o" aria-hidden="true"></i>
                       <i class="fa fa-desktop" aria-hidden="true"></i>
                     <?php endif; ?>
                   </td>
