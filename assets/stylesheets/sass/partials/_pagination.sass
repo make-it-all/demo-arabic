@@ -1,0 +1,40 @@
+.pagination
+  border-top: 1px solid $divider_color
+  padding: 0 30px 0 15px
+  margin-top: 10px
+
+  &.pagination--bottom
+    margin-top: 0
+    margin-bottom: 10px
+    border-bottom: 1px solid $divider_color
+  +flexbox
+  +align-items(center)
+  .pagination--links
+    +flex-grow(1)
+    font-size: 0rem
+    a, span
+      border: 1px solid $divider_color
+      display: inline-block
+      width: 30px
+      height: 30px
+      line-height: 30px
+      text-align: center
+      font-size: 1rem
+      background: white
+      + a, + span
+        border-left: 0
+    a:hover
+      text-decoration: none
+      background: $light_primary_color
+    span
+      background: $accent_color
+      color: white
+
+  .pagination--first
+    border-radius: 5px 0 0 5px
+  .pagination--prev
+  .pagination--number
+  .pagination--active
+  .pagination--next
+  .pagination--last
+    border-radius: 0 5px 5px 0

@@ -10,13 +10,8 @@
         <th data-searchable>Caller</th>
         <th data-searchable>Contact Number</th>
         <th data-searchable>Operator</th>
-<<<<<<< HEAD
         <th data-searchable>Notes</th>
-        <th class="orderable orderable-asc"><a href="#">Created At</a></th>
-=======
         <th class="orderable orderable-asc"><a href="#">Received At</a></th>
-        <th>Notes</th>
->>>>>>> fe2d39a2a139cce001cfe59f84e857b635ffa065
         <th class="narrow_column">Edit</th>
       </tr>
     </thead>

@@ -27,7 +27,7 @@
             <p>35 problems remain outstanding</p>
           </div>
           <div id="page_filters">
-            <div id="filter_container">
+            <!-- <div id="filter_container">
               <div class="filter_group">
                 <h4>Type</h4>
                 <a href="#" class="active_filter">Hardware</a>
@@ -38,7 +38,7 @@
                 <a href="#"><i class="fa fa-times"></i></a>
                 <a href="#"><i class="fa fa-check"></i></a>
               </div>
-            </div>
+            </div> -->
             <div id="search_form">
               <form action="" method="GET">
                 <input type="search" name="q[name_or_email_cont]" placeholder="search..."/>
@@ -48,18 +48,23 @@
           </div>
         </div>
         <div id="page_content">
-          <div>
-            <input type="button" name="firstPage" value="First">
-            <input type="button" name="previousPage" value="Pevious">
-            <input type="button" name="pageOne" value="1">
-            <input type="button" name="pageTwo" value="2">
-            <input type="button" name="pageThree" value="3">
-            <input type="button" name="pageFour" value="4">
-            <input type="button" name="pageFive" value="5">
-            <input type="button" name="nextPage" value="Next">
-            <input type="button" name="LastPage" value="Last">
-            Go to page:
-            <input type="select" name="pageSelect" value="1">
+          <div class="pagination">
+            <div class="pagination--links">
+              <a href="/problems/" class="pagination--first"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+              <a href="?page=1" class="pagination--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+              <a href="?page=1" class="pagination--number">1</a>
+              <span class="pagination--number pagination--active">2</span>
+              <a href="?page=3" class="pagination--number">3</a>
+              <a href="?page=4" class="pagination--number">4</a>
+              <a href="?page=5" class="pagination--number">5</a>
+              <a href="?page=3" class="pagination--next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <a href="?page=9" class="pagination--last"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="pagination--results">
+              <p>
+                Showing 21-40 of 136
+              </p>
+            </div>
           </div>
           <table class="index_table">
             <thead>
@@ -125,6 +130,24 @@
               <?php endfor; ?>
             </tbody>
           </table>
+          <div class="pagination pagination--bottom">
+            <div class="pagination--links">
+              <a href="/problems/" class="pagination--first"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+              <a href="?page=1" class="pagination--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+              <a href="?page=1" class="pagination--number">1</a>
+              <span class="pagination--number pagination--active">2</span>
+              <a href="?page=3" class="pagination--number">3</a>
+              <a href="?page=4" class="pagination--number">4</a>
+              <a href="?page=5" class="pagination--number">5</a>
+              <a href="?page=3" class="pagination--next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <a href="?page=9" class="pagination--last"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="pagination--results">
+              <p>
+                Showing 21-40 of 136
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
