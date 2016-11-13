@@ -22,6 +22,6 @@
     ?>
     </b>
     -
-    <a href="session/logout.php">Log out</a>
+    <a href="/session/logout.php">Log out</a>
   </div>
 </div>
