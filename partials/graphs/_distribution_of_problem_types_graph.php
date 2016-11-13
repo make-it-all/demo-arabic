@@ -5,11 +5,12 @@ window.graphs.push(function() {
 
 var data = new google.visualization.arrayToDataTable([
 ['Problem Type', 'Number of Occurrences'],
-['Linux Crashed', 36],
-['File Deleted', 35],
-['Printer Jammed', 26],
-['No Internet', 31],
-['Computer Slow', 26],
+['Linux Crashed', 21],
+['File Deleted', 25],
+['Printer Jammed', 23],
+['No Internet', 26],
+['Computer Slow', 21],
+['Other', 5],
 ]);
 
 
@@ -21,9 +22,6 @@ legend: {
   textStyle: {color: 'black', fontsize: 16}
 },
 pieSliceText: 'label',
-slices: {
-  1:{offset: 0.1},
-},
 width: 900,
 height: 500
 };
