@@ -57,9 +57,8 @@
                 <th data-searchable>Description</th>
                 <th data-searchable>Keywords</th>
                 <th class="orderable orderable-asc"><a href="#">Created At</a></th>
-                <th class="narrow_column">Done</th>
+                <th class="narrow_column">Status</th>
                 <th class="narrow_column">Edit</th>
-                <th class="narrow_column">Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -104,10 +103,12 @@
                   </td>
 
                   <td>
-                    <?php if (rand(0, 1) == 0): ?>
+                    <?php if (($x = rand(0, 100)) < 40): ?>
                       <i class="fa fa-times bad" aria-hidden="true"></i>
-                    <?php else: ?>
+                    <?php elseif ($x < 80): ?>
                       <i class="fa fa-check good" aria-hidden="true"></i>
+                    <?php else: ?>
+                      <i class="fa fa-circle-o blue" aria-hidden="true"></i>
                     <?php endif; ?>
                   </td>
                   <td><a href="/problems/<?php echo $i + 1; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>

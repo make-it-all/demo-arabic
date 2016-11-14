@@ -3138,6 +3138,8 @@ i.warning {
   color: #ffc107; }
 i.error {
   color: #f44336; }
+i.blue {
+  color: #2196f3; }
 
 span.highlight {
   background: yellow; }
