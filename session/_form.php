@@ -13,7 +13,7 @@
      <div id="login_page_wrapper">
        <div id="form_panel">
          <img src="assets/images/logo.jpg" alt="" />
-         <h1>Sign In</h1>
+         <h1>تسجيل الدخول</h1>
          <form action="/session/process.php" method="POST" id="login_form">
            <?php if (isset($_SESSION['loggin_errors'])): ?>
             <div class="form_errors">
@@ -21,7 +21,7 @@
             </div>
           <?php endif; ?>
           <div class="field">
-            <label for="user_email">Email</label>
+            <label for="user_email">البريد الإلكتروني</label>
             <?php if (isset($_SESSION['login_email'])): ?>
               <input type="email" name="email" id="user_email" value="<?php echo $_SESSION['login_email']; ?>">
             <?php else: ?>
@@ -30,11 +30,11 @@
 
            </div>
            <div class="field">
-             <label for="user_password">Password</label>
+             <label for="user_password">كلمه السر</label>
              <input type="password" name="password" id="user_password">
            </div>
-           <div class="actions">
-             <input type="submit" name="commit" value="Login">
+           <div class="actions" style="text-align: left;">
+             <input  type="submit" name="commit" value="تسجيل الدخول">
            </div>
          </form>
          <div id="language_bar">
