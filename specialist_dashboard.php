@@ -7,14 +7,14 @@
 <div id="page_content" class="columns">
   <div class="main_column">
     <div class="panel">
-      <h1>Welcome, Pauline Keeths</h1>
+      <h1>أهلا بك Pauline Keeths</h1>
       <p>
-        Since you've been gone:
+        منذ كنت قد ذهبت
       </p>
       <ul>
-        <li>3 New jobs assigned.</li>
-        <li>4 Follow up calls to your jobs.</li>
-        <li>1 Specialist has made a request of you.</li>
+        <li>3 وظائف جديدة أوكلت</li>
+        <li>4 متابعة المكالمات لفرص العمل الخاص بك</li>
+        <li>1 جعلت متخصص طلب منكم</li>
       </ul>
     </div>
 
@@ -67,34 +67,15 @@
   <div class="sub_column">
 
     <div class="panel big_number green">
-      <p>You have solved</p>
+      <p>منذ كنت قد ذهبت</p>
       <h4>43</h4>
-      <p>Problems so far this month.</p>
+      <p>المشكلة حتى الآن هذا الشهر</p>
     </div>
     <div class="panel big_number red">
       <p>You have</p>
       <h4>16</h4>
       <p> follow up questions.</p>
     </div>
-
-    <div class="panel graphed">
-      <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart', 'line']});
-
-        window.graphs = [];
-        google.charts.setOnLoadCallback(function(){
-          for(i=0;i<window.graphs.length;i++) {
-            window.graphs[i].call();
-          }
-        });
-        window.g_width = 350;
-        window.g_height = 250;
-      </script>
-      <?php require $_SERVER['DOCUMENT_ROOT'].'/partials/graphs/_new_calls_graph.php'; ?>
-    </div>
-
-
-
   </div>
 
 <?php

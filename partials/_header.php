@@ -4,7 +4,7 @@
   </div>
   <div class="flex-spacer"></div>
   <div id="user_section">
-    Signed in as
+    وقعت في مثل
     <b>
     <?php
       (session_status() == PHP_SESSION_NONE) ? session_start() : '';
@@ -26,6 +26,6 @@
     ?>
     </b>
     -
-    <a href="/session/logout.php">Log out</a>
+    <a href="/session/logout.php">تسجيل الخرو</a>
   </div>
 </div>

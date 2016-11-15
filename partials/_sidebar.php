@@ -22,13 +22,13 @@
   }
 ?>
 <div id="sidebar">
-  <a href="/">Dashboard</a>
+  <a href="/">لوحة القيادة</a>
   <?php if ($spec): ?>
     <section>
-      <h4>Jobs</h4>
-      <a href="#">My Jobs</a>
-      <a href="#">Unassigned</a>
-      <a href="#">Completed</a>
+      <h4>وظائف</h4>
+      <a href="#">وظائفي</a>
+      <a href="#">غير معين</a>
+      <a href="#">منجز</a>
     </section>
   <?php endif; ?>
   <?php if (!$spec): ?>
@@ -39,11 +39,11 @@
   </section>
 <?php endif; ?>
   <section>
-    <h4>Problems</h4>
-    <a href="/problems">All</a>
-    <a href="/problems/new">New</a>
-    <a href="#">Completed</a>
-    <a href="#">Outstanding</a>
+    <h4>مشاكل</h4>
+    <a href="/problems">جميع</a>
+    <a href="/problems/new">جديد</a>
+    <a href="#">منجز</a>
+    <a href="#">معلقة</a>
   </section>
 <?php if (!$spec): ?>
   <section>
@@ -64,12 +64,12 @@
   </section>
   <?php endif; ?>
   <section>
-    <h4>Reports</h4>
-    <a href="#">Generate</a>
-    <a href="#">View Archived</a>
+    <h4>تقارير</h4>
+    <a href="#">توليد</a>
+    <a href="#">عرض أرشيف</a>
   </section>
   <section class="bottom_section">
-    <a href="#">Settings</a>
+    <a href="#">إعدادات</a>
   </section>
   <div id="language_selector">
     <input type="checkbox" class="dropdown_controller" id="language_dropdown"/>
