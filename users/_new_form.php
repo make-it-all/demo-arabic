@@ -57,9 +57,6 @@
             <label>Department Number</label>
             <input type="text" name="name" value="007"/>
           </div>
-          <div class="actions">
-            <input type="submit" name="commit" value="Update User"/ >
-          </div>
         </div>
         <div class="tab_panel">
           <select multiple="multiple">
