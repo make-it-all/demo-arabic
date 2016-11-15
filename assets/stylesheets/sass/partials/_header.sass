@@ -6,7 +6,8 @@
   #app_logo
     width: $sidebar_width
     background: $dark_primary_color
-    img
+    @media screen and (max-width: 1050px)
+      width: $narrow_sidebar_width
 
   .flex-spacer
     +flex-grow(1)
