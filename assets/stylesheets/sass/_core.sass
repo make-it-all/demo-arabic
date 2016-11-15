@@ -183,7 +183,8 @@ span.highlight
     background: #009688!important
   &.red
     background: #ff9800!important
-
+  &.purple
+    background: #9c27b0
   h4
     font-size: 4rem
     color: white
@@ -248,6 +249,7 @@ span.highlight
     &.green
       background: #9621f3
 
+
 .fade_out
   position: absolute
   height: 130px
@@ -266,3 +268,60 @@ textarea
   padding: 10px 15px
   border: 1px solid #ccc
   border-radius: 3px
+
+
+.column-4
+  +flexbox
+  >div
+    width: 25%
+    margin-left: 10px
+    margin-right: 10px
+    &:last-of-type
+      margin-right: 30px
+    &:first-of-type
+      margin-left: 30px
+
+.column-3
+  +flexbox
+
+  >div
+    width: 30%
+    margin-left: 5px
+    margin-right: 5px
+    margin-top: -10px
+    margin-bottom: 10px
+    &:first-child
+      width: 40%
+      margin-left: 30px
+    &:last-of-type
+      margin-right: 30px
+
+
+
+
+
+.people_messsages
+  width: 60%
+  padding: 10px
+  h3
+    display: block
+    height: 50px
+    line-height: 50px
+    border-bottom: 1px solid #efefef
+  .message_container
+    height: 265px
+    background: #fbfbfb
+    overflow-y: scroll
+.message-left
+  padding: 5px 15px
+  background: #abe3fc
+  margin-right: 30%
+  border-radius: 5px 15px 15px 0
+  box-shadow: 0 1px 1px rgba(black, 0.5)
+.message-right
+  background: white
+  padding: 5px 15px
+  position: relative
+  margin-left: 30%
+  border-radius: 15px 5px 0 16px
+  box-shadow: 0 1px 1px rgba(black, 0.5)

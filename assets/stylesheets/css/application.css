@@ -3201,6 +3201,8 @@ span.highlight {
     background: #009688 !important; }
   .big_number.red {
     background: #ff9800 !important; }
+  .big_number.purple {
+    background: #9c27b0; }
   .big_number h4 {
     font-size: 4rem;
     color: white;
@@ -3289,6 +3291,67 @@ textarea {
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 3px; }
+
+.column-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .column-4 > div {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .column-4 > div:last-of-type {
+      margin-right: 30px; }
+    .column-4 > div:first-of-type {
+      margin-left: 30px; }
+
+.column-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .column-3 > div {
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -10px;
+    margin-bottom: 10px; }
+    .column-3 > div:first-child {
+      width: 40%;
+      margin-left: 30px; }
+    .column-3 > div:last-of-type {
+      margin-right: 30px; }
+
+.people_messsages {
+  width: 60%;
+  padding: 10px; }
+  .people_messsages h3 {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #efefef; }
+  .people_messsages .message_container {
+    height: 265px;
+    background: #fbfbfb;
+    overflow-y: scroll; }
+
+.message-left {
+  padding: 5px 15px;
+  background: #abe3fc;
+  margin-right: 30%;
+  border-radius: 5px 15px 15px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+
+.message-right {
+  background: white;
+  padding: 5px 15px;
+  position: relative;
+  margin-left: 30%;
+  border-radius: 15px 5px 0 16px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
 .tabs_container input[type='radio'].tab_controller {
   display: none; }
@@ -3460,6 +3523,67 @@ select {
 
 .form_errors p {
   color: #ff5722; }
+
+input[type=search].search_people {
+  width: 85%;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: inline-block; }
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #f2b800;
+  -webkit-appearance: none;
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px;
+  border: 0; }
+
+.messages_panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px; }
+  .messages_panel .people_online {
+    width: 30%; }
+    .messages_panel .people_online .field {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      justify-content: space-around; }
+    .messages_panel .people_online .personnel_card_container {
+      overflow-y: scroll;
+      height: 300px; }
+    .messages_panel .people_online .personnel_card {
+      margin: 5px 0;
+      position: relative; }
+      .messages_panel .people_online .personnel_card p {
+        margin: 5px 0; }
+      .messages_panel .people_online .personnel_card:after {
+        content: "";
+        font-family: FontAwesome;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 40%;
+        font-size: 1.5rem;
+        color: rgba(242, 184, 0, 0.5);
+        transition: 0.3s; }
+      .messages_panel .people_online .personnel_card:hover:after {
+        color: #f2b800; }
 
 #title_bar {
   background: #333;
