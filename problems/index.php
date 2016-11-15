@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>User Index</title>
-    <link rel="stylesheet" href="/assets/stylesheets/css/application.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/assets/javascripts/application.js"></script>
-    <script src="/assets/javascripts/chosen.js"></script>
-  </head>
-  <body>
-  <?php require '../partials/_header.php'; ?>
-   <div id="page_wrapper">
-    <?php require '../partials/_sidebar.php'; ?>
-
-    <div id="page">
-      <?php include $_SERVER["DOCUMENT_ROOT"].'/partials/_flash.php'; ?>
-      <div id="page_inner">
-        <div id="page_head">
-          <div id="page_info">
-            <h1>136 Problems</h1>
-            <div id="page_actions">
-              <a href="/problems/new/index.php" class="page_action">New +</a>
-            </div>
-            <p>29 problems have been solved since last log on
-            </p>
-            <p>35 problems remain outstanding</p>
-          </div>
-          <div id="page_filters">
-            <!-- <div id="filter_container">
-              <div class="filter_group">
-                <h4>Type</h4>
-                <a href="#" class="active_filter">Hardware</a>
-                <a href="#">Software</a>
-              </div>
-              <div class="filter_group">
-                <h4>Completed</h4>
-                <a href="#"><i class="fa fa-times"></i></a>
-                <a href="#"><i class="fa fa-check"></i></a>
-              </div>
-            </div> -->
-            <div id="search_form">
-              <form action="" method="GET">
-                <input type="search" name="q[name_or_email_cont]" placeholder="search..."/>
-                <input type="submit" value="Search"/>
-              </form>
-            </div>
-          </div>
-        </div>
+<?php
+  $title = "Problems";
+  require $_SERVER['DOCUMENT_ROOT'].'/partials/_head.php';
+ ?>
         <div id="page_content">
           <php require $_SERVER['DOCUMENT_ROOT'].'/partials/_pagination.php'; ?>
 
@@ -112,7 +67,6 @@
                     <?php endif; ?>
                   </td>
                   <td><a href="/problems/<?php echo $i + 1; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                  <td><a href="/problems/<?php echo $i + 1; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
                 </tr>
               <?php endfor; ?>
             </tbody>
@@ -136,7 +90,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </body>
-</html>
+
+<?php
+  require $_SERVER['DOCUMENT_ROOT'].'/partials/_foot.php';
+?>

@@ -21,6 +21,9 @@ var data = new google.visualization.arrayToDataTable([
 ['14th', 3, 15],
 ]);
 
+window.g2_width = window.g2_width || 900;
+window.g2_height = window.g2_height || 500;
+
 var options = {
 title: 'No. of Specialists to Problems',
 subtitle: 'Recorded over the first two weeks of March',
@@ -28,8 +31,8 @@ curveType: 'function',
 legend: {
   position: 'bottom'
 },
-width: 900,
-height: 500,
+width: window.g2_width,
+height: window.g2_height,
 };
 
 var chart = new google.visualization.LineChart(document.getElementById('availability_of_specialists_graph'));

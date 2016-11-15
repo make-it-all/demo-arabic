@@ -8,16 +8,20 @@
     <b>
     <?php
       (session_status() == PHP_SESSION_NONE) ? session_start() : '';
-      switch ($_SESSION['logged_in']) {
-      case 'boss':
-        echo 'James Boss';
-        break;
-      case 'helpdesk':
-      echo 'Alice Help';
-        break;
-      case 'specialist':
-        echo 'paul spec';
-        break;
+      if (isset($_SESSION['logged_in'])) {
+        switch ($_SESSION['logged_in']) {
+        case 'boss':
+          echo 'James Boss';
+          break;
+        case 'helpdesk':
+        echo 'Alice Help';
+          break;
+        case 'specialist':
+          echo 'Pauline Keeths';
+          break;
+        default:
+          echo 'John Gorg';
+        }
       }
     ?>
     </b>

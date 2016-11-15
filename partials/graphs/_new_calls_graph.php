@@ -43,13 +43,16 @@ data.addRows([
 ['31st', 200, 5, 205],
 ]);
 
+window.g_width = window.g_width || 900;
+window.g_height = window.g_height || 500;
+
 var options = {
 chart: {
 title: 'Problems through the month of Janurary',
 subtitle: 'Recorded at the end of each working day',
 },
-width: 900,
-height: 500
+width: window.g_width,
+height: window.g_height
 };
 
 var chart = new google.charts.Line(document.getElementById('new_calls_graph'));

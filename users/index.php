@@ -33,7 +33,9 @@
             $roles = ['specialist', 'operator'];
             shuffle($roles);
           ?>
-          <td><?php echo implode(', ', array_slice($roles, 0, rand(-1,2))); ?></td>
+          <td>
+            <?php echo (isset($_GET['f']))? $_GET['f']:implode(', ', array_slice($roles, 0, rand(-1,2))); ?>
+          </td>
           <td><a href="/users/1"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
           <td><a href="#" data-confirm="Are you sure you want to delete this user?"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
         </tr>

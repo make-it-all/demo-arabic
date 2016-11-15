@@ -1,34 +1,108 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>User Index</title>
-    <link rel="stylesheet" href="/assets/stylesheets/css/application.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/assets/javascripts/application.js"></script>
-    <script src="/assets/javascripts/chosen.js"></script>
-  </head>
-  <body>
-  <?php require '../../partials/_header.php'; ?>
-   <div id="page_wrapper">
-    <?php require '../../partials/_sidebar.php'; ?>
-    <div id="page">
-      <?php include $_SERVER["DOCUMENT_ROOT"].'/partials/_flash.php'; ?>
-      <div id="page_inner">
-        <div id="page_head">
-          <div id="page_info">
-            <h1>New Problem</h1>
-            <div id="page_actions">
-              <a href="/problems" class="page_action red">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                Cancel
-              </a>
+<?php
+  $title = "New Problems";
+  require $_SERVER['DOCUMENT_ROOT'].'/partials/_head.php';
+?>
+
+<div id="page_content">
+
+  <form action="/problems?flash=Problem+Created" method="POST" class="with_panels">
+
+    <div id="main_form_panel">
+
+
+
+
+      <div class="field">
+        <label>Problem ID</label>
+        <input type="text" name="name" value="325"/>
+      </div>
+      <div class="field">
+        <label>Call Time</label>
+        <input type="text" name="name" value="Oct 3 2016, 9.00am"/>
+      </div>
+      <div class="field">
+        <label>Software</label>
+        <input type="text" name="name" value="Windows 8"/>
+      </div>
+      <div class="field">
+        <label>Hardware</label>
+        <input type="text" name="name" value="Printer"/>
+      </div>
+      <div class="actions">
+        <input type="submit" name="commit" value="Create Problem"/ >
+      </div>
+    </div>
+
+    <div id="side_form_panel">
+
+
+      <div class="tabs_container">
+        <input type="radio" class="tab_controller" name="tab" id="tab_1" checked>
+        <input type="radio" class="tab_controller" name="tab" id="tab_2">
+        <input type="radio" class="tab_controller" name="tab" id="tab_3">
+        <input type="radio" class="tab_controller" name="tab" id="tab_4">
+        <input type="radio" class="tab_controller" name="tab" id="tab_5">
+        <div class="tab_heads_container">
+          <label for="tab_1">Caller Information</label>
+          <label for="tab_2">Description</label>
+          <label for="tab_3">Notes</label>
+          <label for="tab_4">Specialist</label>
+          <label for="tab_5">Solution</label>
+        </div>
+        <div class="tab_panels_container">
+          <div class="tab_panel">
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="name" value="George Formby"/>
+            </div>
+            <div class="field">
+              <label>Department</label>
+              <input type="text" name="name" value="Cleaning"/>
+            </div>
+            <div class="field">
+              <label>Extention Number</label>
+              <input type="text" name="name" value="23456"/>
             </div>
           </div>
-        </div>
-        <div id="page_content">
-          <?php include $_SERVER['DOCUMENT_ROOT'].'/problems/_new_form.php'; ?>
+          <div class="tab_panel">
+            <div class="field">
+              <label for="desk_area"></label>
+              <textarea placeholder="Description" id="desk_area"></textarea>
+            </div>
+            <select multiple="multiple">
+              <option value="microsoft office">Microsoft Office</option>
+              <option value="microsoft office">Microsoft Word</option>
+              <option value="microsoft office">Microsoft Word Printing</option>
+              <option value="microsoft office">Microsoft Word Formatting</option>
+              <option value="microsoft office">Microsoft Word Styling</option>
+              <option value="microsoft office">Microsoft Excel</option>
+              <option value="microsoft office">Microsoft Word Formatting</option>
+              <option value="microsoft office">Microsoft Word Formulas</option>
+            </select>
+          </div>
+          <div class="tab_panel">
+            <div class="field">
+              <label for="notes_area"></label>
+              <textarea placeholder="Notes" id="notes_area"></textarea>
+            </div>
+          </div>
+          <div class="tab_panel">
+            <select multiple="multiple">
+
+            </select>
+          </div>
         </div>
       </div>
-   </div>
-  </html>
+
+
+    </div>
+
+  </form>
+
+
+
+</div>
+
+<?php
+  require $_SERVER['DOCUMENT_ROOT'].'/partials/_foot.php';
+ ?>

@@ -5,7 +5,7 @@
         <div id="page_content">
 
           <div class="panel">
-            <h1>Welcome, Michael Boss</h1>
+            <h1>Welcome, James Boss</h1>
             <p>
               Stuff has gone on:
             </p>
@@ -15,8 +15,7 @@
               <li>7 Calls have been made about problems you created.</li>
             </ul>
           </div>
-
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          
           <script type="text/javascript">
             google.charts.load('current', {'packages':['corechart', 'line']});
 

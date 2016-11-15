@@ -7,6 +7,7 @@
     <?php endif; ?>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/assets/stylesheets/css/application.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/javascripts/application.js"></script>
     <script src="/assets/javascripts/chosen.js"></script>

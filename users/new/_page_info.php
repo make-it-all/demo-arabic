@@ -1,4 +1,6 @@
 <h1>New User</h1>
 <div id="page_actions">
-  <a href="#" class="page_action">View All</a>
+  <a href="/users/" class="page_action">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    Cancel</a>
 </div>
